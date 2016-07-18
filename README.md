@@ -26,13 +26,3 @@ You can change the format table_txt line 46 Figure 7 for whatever format you nee
 | amino_acid              | Protein translations for genes                            |  
 | table_txt               | Gene data in tab-separated format                         |  
 | table_xls               | Gene data in EXCEL format                                 |   
-
-**Example Template**
-### Column Sorting
-
-| Attribute      | Element    | Type           | Description |
-| :------------- | :--------- | :------------- | :---------- |
-| `mdDesc`       | `mdColumn` | `[expression]` | If present, the column will sort descending first. The default is to sort ascending first. |
-| `mdOnReorder`  | `mdHead`   | `function`     | A callback function for when the order changes. The callback will receive the new order. |
-| `mdOrder`      | `mdHead`   | `string`       | A variable to bind the sort order to. |
-| `mdOrderBy`    | `mdColumn` | `string`       | The value to bind to the sort order. |
