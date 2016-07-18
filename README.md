@@ -9,6 +9,8 @@ Download files
 
 ### Rast formats to retrieve files.
 You can change the format table_txt line 46 Figure 7 for whatever format you need.  
+
+
 | Attribute               | Description                                               |  
 | :---------------------- | :-------------------------------------------------------- |  
 | genbank                 | GenBank (with SEED function conventions and enhancements) |  
