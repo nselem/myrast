@@ -8,9 +8,10 @@ Download files
 
 
 ### Rast formats to retrieve files.
-You can change the format table_txt line 46 Figure 7 for whatever format you need.
-| :------------- | :------------------- |  
-| genbank            | GenBank (with SEED function conventions and enhancements) |  
+You can change the format table_txt line 46 Figure 7 for whatever format you need.  
+| Attribute      | Description |  
+| :---------------------- | :------------------- |  
+| genbank                 | GenBank (with SEED function conventions and enhancements) |  
 | genbank_stripped        | GenBank with EC-numbers stripped from functions |  
 | embl                    | EMBL (with SEED function conventions and enhancements) |  
 | embl_stripped           | EMBL with EC-numbers stripped from functions |  
