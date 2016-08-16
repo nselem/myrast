@@ -1,7 +1,9 @@
 # myrast
 myrast dockerfile 
-This is myrast distribution on a docker file.  Just run it as: 
-`docker run -i -t -v /home/nelly/docker-myrast:/home myrast /bin/bash`
+This is myrast distribution on a docker file. To use myrast you need a RAST account.  
+
+Run it as: 
+`docker run -i -t -v /home/myfiles_local:/home myrast /bin/bash`
 you can download files:  
 `svr_retrieve_RAST_job <user> <password> <jobId> table_txt > $ID.txt`
 or upload files
@@ -51,7 +53,6 @@ Assembly NCBI
 Genoma NCBI
 Note. Please check that your organism name is correctly written. And that is only the First letter of the genus must be capital. Names like CORYNEBACTERIUM ACCOLENS ATCC 49725 won't be accepted, you must write  Corynebacterium accolens atcc 49725 instead. You can use in excel or libre office the option Format->Change Capitals (feature not present in google drive).
 
-## 2.2 NCBI_and_RAST script  
 To download genomes without using RAST please comment line 20 adding a character # at the beginning of line, Figure 2. Save your changes. 
 
 Figure 3. Modify line 20 if you are not planning to use RAST, and this is if you only want to download genomes from NCBI.
@@ -59,7 +60,7 @@ Figure 3. Modify line 20 if you are not planning to use RAST, and this is if you
 Finally, run the script:     
 `perl 1.NCBI_and_RAST Id_NCBI`
 
-## 3. RAST upload genomes  
+## 2. RAST upload genomes  
 **Input files** 
 Id_NCBI file (File with the genome ids from NCBI you wish to upload to RAST)
 1.NCBI_and_RAST script from GitHub  
@@ -77,13 +78,13 @@ Figure 4. Line 107 set username and password.
 Finally, run the script:     
 `perl 1.NCBI_and_RAST Id_NCBI`  
 
-## 4. RAST retrieve genomes   
+## 3. RAST retrieve genomes   
 **Input Files:**
 RAST_id  file with your RAST ids
 2.Batch_RetrievesFiles.pl script from GitHub
 `perl 2.Batch_RetrieveFiles.pl RAST_id`
 
-**4.1. Id_RAST file**
+**3.1. Id_RAST file**
 From your jobs overview personal website, copy the job, the id and the  organism name columns in a text tab separated file. See the anexo if you don't know how to create a tab separated file.
 
 Figure 5. Get your jobs id from RAST website.
