@@ -9,12 +9,12 @@ Extra features of docker-myrast.
 3. Download genomes to RAST.  
 
 ## 1 Download genomes from NCBI
-** Input Files: **
+**Input Files:**
 Id_NCBI file (File with the genome ids from NCBI you wish to upload to RAST)  
 1.NCBI_and_RAST script from GitHub  
 `perl 1.NCBI_and_RAST Id_NCBI  `
 
-** 1.1 Id_NCBI file  **
+**1.1 Id_NCBI file**
 Prepare the file Id_NCBI. It should be a text file with three columns. The first column filled with NCBI Ids, the second column should contain the organism's genus and the third one the species name. The three columns must be tab separated. Accepted IDs: You can only use ids from the NCBI databases protein, nucleotide and genome.
 
 
