@@ -3,7 +3,7 @@ myrast dockerfile
 This is myrast distribution on a docker file. To use myrast you need a RAST account.  
 
 Run it as: 
-`docker run -i -t -v /home/myfiles_local:/home myrast /bin/bash`
+`docker run -i -t -v /home/myfiles_local:/home nselem/myrast /bin/bash`
 you can download files:  
 `svr_retrieve_RAST_job <user> <password> <jobId> table_txt > $ID.txt`
 or upload files
