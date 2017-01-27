@@ -12,9 +12,9 @@ Now you can use myRast, for exampleyou can download files:
 `svr_retrieve_RAST_job <user> <password> <jobId> table_txt > $ID.txt`
 or upload files
 
-if you have a list you can use 
-cut -f1 | while read line 
-Download formats
+if you have a list, to process it in bash mode you can use stored on file Rast_ID you can use   
+`cut -f1 Rast_ID | while read line; do  svr_retrieve_RAST_job clavigenomics clavigenomics1 $line amino_acid > $line.txt ; done`
+
 
 ### Rast formats to retrieve files.
 You can change the format table_txt line 46 Figure 7 for whatever format you need.  
