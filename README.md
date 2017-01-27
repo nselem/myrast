@@ -1,13 +1,19 @@
 # myrast
 myrast dockerfile 
 This is myrast distribution on a docker file. To use myrast you need a RAST account.  
+## Download myrast docker distribution   
+Once you have docker installed, pull the myrast dcker distribution.  
+`docker pull nselem/myrast`  
 
-Run it as: 
+## Open myRast terminal   
 `docker run -i -t -v /home/myfiles_local:/home nselem/myrast /bin/bash`
-you can download files:  
+## USe myRast  
+Now you can use myRast, for exampleyou can download files:  
 `svr_retrieve_RAST_job <user> <password> <jobId> table_txt > $ID.txt`
 or upload files
 
+if you have a list you can use 
+cut -f1 | while read line 
 Download formats
 
 ### Rast formats to retrieve files.
