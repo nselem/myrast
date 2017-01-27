@@ -13,7 +13,7 @@ Now you can use myRast, for exampleyou can download files:
 or upload files
 
 if you have a list, to process it in bash mode you can use stored on file Rast_ID you can use   
-`cut -f1 Rast_ID | while read line; do  svr_retrieve_RAST_job clavigenomics clavigenomics1 $line amino_acid > $line.txt ; done`
+`cut -f1 Rast_ID | while read line; do  svr_retrieve_RAST_job <user> <password> $line amino_acid > $line.txt ; done`
 
 
 ### Rast formats to retrieve files.
