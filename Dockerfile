@@ -17,8 +17,10 @@ RUN apt-get install -y build-essential
 #RUN curl -L http://blog.theseed.org/downloads/sas.tgz > sas.tgz
 RUN mkdir /opt/sas && curl http://blog.theseed.org/downloads/sas.tgz | tar -zxC /opt/sas
 RUN cd /opt/sas/modules && ./BUILD_MODULES
+
 #RUN export PERL5LIB=$PERL5LIB:/opt/sas/lib:/opt/sas/modules/lib
 #RUN export PATH=$PATH:/opt/sas/bin
 
 ENV PATH /opt/sas/bin:$PATH
 ENV PERL5LIB $PERL5LIB:/opt/sas/lib:/opt/sas/modules/lib
+WORKDIR /home
