@@ -18,7 +18,7 @@ Note On -bioname it is important that the first letter is capital and all the ot
 `svr_retrieve_RAST_job <user> <password> <jobId> table_txt > $ID.txt`  
   
 if you have a list of files, you can process it with bash. For example to download a list of RAST files, store the RAST Id numbers on a file, (Rast_ID on this example) and use a while from bash to retrieve them:  
-On this case the variable line will contain a RAST Id number, and each RAST Id file will be downloaded and stored on $line .txt
+On this case the variable line will contain a RAST Id number, and each RAST Id file will be downloaded and stored on $line .txt  
 `cut -f1 Rast_ID | while read line; do  svr_retrieve_RAST_job <user> <password> $line amino_acid > $line.txt ; done`
 
 
