@@ -7,17 +7,18 @@ Once you have docker installed, pull the myrast dcker distribution.
 
 ## Open myRast terminal   
 `docker run -i -t -v /home/myfiles_local:/home nselem/myrast /bin/bash`
-## USe myRast  
-Now you can use myRast, for example  
-to upload fasta/genbank  
+## Use myRast  
+Now you can use myRast:  
+-To upload fasta/genbank  
 `svr_submit_RAST_job -user <user> -passwd <pass> -fasta <file> -domain Bacteria -bioname "Organism name" -genetic_code 11 -gene_caller rast`  
+  
 Note On -bioname it is important that the first letter is capital and all the others lowercase, as on scientific names.  
-
-you can download files:  
-`svr_retrieve_RAST_job <user> <password> <jobId> table_txt > $ID.txt`
-or upload files
-
-if you have a list, to process it in bash mode you can use stored on file Rast_ID you can use   
+  
+-To download files:  
+`svr_retrieve_RAST_job <user> <password> <jobId> table_txt > $ID.txt`  
+  
+if you have a list of files, you can process it with bash. For example to download a list of RAST files, store the RAST Id numbers on a file, (Rast_ID on this example) and use a while from bash to retrieve them:  
+On this case the variable line will contain a RAST Id number, and each RAST Id file will be downloaded and stored on $line .txt
 `cut -f1 Rast_ID | while read line; do  svr_retrieve_RAST_job <user> <password> $line amino_acid > $line.txt ; done`
 
 
