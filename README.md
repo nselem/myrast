@@ -23,7 +23,7 @@ On this case the variable line will contain a RAST Id number, and each RAST Id f
 
 
 ### Rast formats to retrieve files.
-You can change the format table_txt line 46 Figure 7 for whatever format you need.  
+You can change the format table_txt for whatever format you need.  
 
 
 | Attribute               | Description                                               |  
