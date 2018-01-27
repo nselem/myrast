@@ -6,7 +6,7 @@ Once you have docker installed, pull the myrast dcker distribution.
 `docker pull nselem/myrast`  
 
 ## Open myRast terminal   
-`docker run -i -t -v /home/myfiles_local:/home nselem/myrast /bin/bash`
+`docker run -i -t -v $(pwd):/home nselem/myrast /bin/bash`
 ## Use myRast  
 Now you can use myRast:  
 -To upload fasta/genbank  
