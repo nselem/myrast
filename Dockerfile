@@ -20,13 +20,14 @@ RUN cd /opt/sas/modules && ./BUILD_MODULES
 RUN apt-get install wget
 
 ## Cloning perl script to upload download genomes
+RUN chmod -R 777 /opt
 RUN apt-get install -y git
-RUN git clone https://github.com/nselem/myrast.git  
-RUN chmod -R 777 /root/myrast/
+RUN git clone https://github.com/nselem/myrast.git  /opt/myrast
+RUN chmod -R 777 /opt/myrast
 
 #RUN export PERL5LIB=$PERL5LIB:/opt/sas/lib:/opt/sas/modules/lib
 #RUN export PATH=$PATH:/opt/sas/bin
 
-ENV PATH /opt/sas/bin:$PATH
+ENV PATH /opt/sas/bin:$PATH:/opt/myrast
 ENV PERL5LIB $PERL5LIB:/opt/sas/lib:/opt/sas/modules/lib
 WORKDIR /home
