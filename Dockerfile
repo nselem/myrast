@@ -19,6 +19,10 @@ RUN mkdir /opt/sas && curl http://blog.theseed.org/downloads/sas.tgz | tar -zxC 
 RUN cd /opt/sas/modules && ./BUILD_MODULES
 RUN apt-get install wget
 
+## Cloning perl script to upload download genomes
+RUN apt-get install -y git
+RUN git clone https://github.com/nselem/myrast.git  
+RUN chmod -R 777 /root/myrast/
 
 #RUN export PERL5LIB=$PERL5LIB:/opt/sas/lib:/opt/sas/modules/lib
 #RUN export PATH=$PATH:/opt/sas/bin
