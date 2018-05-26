@@ -81,19 +81,10 @@ Finally, run the script:
 **Input files** 
 Id_NCBI file (File with the genome ids from NCBI you wish to upload to RAST)
 1.NCBI_and_RAST script from GitHub  
-`perl 1.NCBI_and_RAST Id_NCBI`  
+`perl 1.NCBI_and_RAST Id_NCBI file user pass`    
 
 **Id_NCBI file** 
 Follow the instructions in the page above.
-
-3.2.1 Set your user and password
-In the script line 107, please write your username and password instead of myuser and mypass. (Figure 4).
-
-
-Figure 4. Line 107 set username and password.
-
-Finally, run the script:     
-`perl 1.NCBI_and_RAST Id_NCBI`  
 
 ## 3. RAST retrieve genomes   
 **Input Files:**
