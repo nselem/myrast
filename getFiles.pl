@@ -14,13 +14,14 @@ my $password=shift @ARGV;
 
 open (FILE,$file) or die "No pude abrir el archivo $file\n$!";
 foreach my $line (<FILE>){
-	chomp $line
-	print("svr_retrieve_RAST_job  $user $password $line amino_acid > $line.faa");
-	system("svr_retrieve_RAST_job $user $password $line amino_acid > $line.faa");
-	print("svr_retrieve_RAST_job  $user $password $line table_txt > $line.txt");
-	system("svr_retrieve_RAST_job $user $password $line table_txt > $line.txt");
-	print("svr_retrieve_RAST_job  $user $password $line nucleic_acid > $line.fna");
-	system("svr_retrieve_RAST_job $user $password $line nucleic_acid > $line.fna");	
+	chomp $line;
+	my @st=split(/\t/,$line);
+	print("svr_retrieve_RAST_job  $user $password $st[0] amino_acid > $st[1].faa\n");
+	system("svr_retrieve_RAST_job $user $password $st[0] amino_acid > $st[1].faa");
+	print("svr_retrieve_RAST_job  $user $password $st[0] table_txt > $st[1].txt\n");
+	system("svr_retrieve_RAST_job $user $password $st[0] table_txt > $st[1].txt");
+	print("svr_retrieve_RAST_job  $user $password $st[0] nucleic_acid > $st[1].fna\n");
+	system("svr_retrieve_RAST_job $user $password $st[0] nucleic_acid > $st[1].fna");	
 }
 
 
