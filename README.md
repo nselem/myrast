@@ -81,7 +81,7 @@ Finally, run the script:
 **Input files** 
 Id_NCBI file (File with the genome ids from NCBI you wish to upload to RAST)
 1.NCBI_and_RAST script from GitHub  
-`perl 1.NCBI_and_RAST Id_NCBI file user pass`    
+`1.NCBI_and_RAST Id_NCBI file user pass`    
 
 **Id_NCBI file** 
 Follow the instructions in the page above.
@@ -90,7 +90,7 @@ Follow the instructions in the page above.
 **Input Files:**
 RAST_id  file with your RAST ids
 2.Batch_RetrievesFiles.pl script from GitHub
-`perl 2.Batch_RetrieveFiles.pl RAST_id`
+`2.Batch_RetrieveFiles.pl RAST_id`
 
 **3.1. Id_RAST file**
 From your jobs overview personal website, copy the job, the id and the  organism name columns in a text tab separated file. See the anexo if you don't know how to create a tab separated file.
