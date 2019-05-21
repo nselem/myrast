@@ -1,6 +1,7 @@
 # myrast
 myrast dockerfile 
-This is myrast distribution on a docker file. To use myrast you need a RAST account.  
+This is myrast distribution on a docker file. To use myrast you need a RAST account. BEside upload and retrieve genomes that are the functionalities described here, other [myrast commands](http://blog.theseed.org/servers/usage/the-rast-batch-interface.html) can be used with this docker distribution.    
+
 ## Download myrast docker distribution   
 Once you have docker installed, pull the myrast dcker distribution.  
 `docker pull nselem/myrast`  
