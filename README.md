@@ -98,8 +98,10 @@ You can look for the NCBI ids from the following links:
 [Genoma NCBI](http://www.ncbi.nlm.nih.gov/genome/browse/)  
 Note. Please check that your organism name is correctly written. And that is only the First letter of the genus must be capital. Names like CORYNEBACTERIUM ACCOLENS ATCC 49725 won't be accepted, you must write  Corynebacterium accolens atcc 49725 instead. You can use in excel or libre office the option Format->Change Capitals (feature not present in google drive).
 
+![NCBI id list](figure/fig2.png)
 To download genomes without using RAST please comment line 20 adding a character # at the beginning of line, Figure 2. Save your changes. 
 
+![NCBI id list](figure/fig3.png)
 Figure 3. Modify line 20 if you are not planning to use RAST, and this is if you only want to download genomes from NCBI.
 
 Finally, run the script:     
@@ -123,8 +125,9 @@ RAST_id  file with your RAST ids
 **3.1. Id_RAST file**
 From your jobs overview personal website, copy the job, the id and the  organism name columns in a text tab separated file. See the anexo if you don't know how to create a tab separated file.
 
+![NCBI id list](figure/fig4.png)
 Figure 5. Get your jobs id from RAST website.
-
+![NCBI id list](figure/fig5.png)
 Figure 6. Create a file with your jobs id’s.
 Anexo:
 
