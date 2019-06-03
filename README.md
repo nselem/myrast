@@ -108,7 +108,12 @@ Figure 3. Modify line 20 if you are not planning to use RAST, and this is if you
 Finally, run the script:     
 `perl 1.NCBI_and_RAST Id_NCBI`  
 
-### Download genomes using [ncbi-genome-download](https://github.com/kblin/ncbi-genome-download) github repo from kblin.   
+### Download genomes using [ncbi-genome-download](https://github.com/kblin/ncbi-genome-download) github repo from kblin. 
+
+To download some specific bacteria we have used  
+`ncbi-genome-download --genus Clavibacter bacteria --parallel 4 --assembly-level complete --format fasta_ --dry-run >IDS`
+`ncbi-genome-download --genus Clavibacter bacteria --parallel 4 --assembly-level complete --format fasta_ --dry-run >IDS`
+
 `ncbi-genome-download --dry-run bacteria`  
 
 
