@@ -76,8 +76,9 @@ You can change the format table_txt for whatever format you need.
 2. Upload genomes to RAST.  
 3. Download genomes to RAST.  
 
-## 1 Download genomes from NCBI
-**Input Files:**
+## 1 Download genomes from NCBI  
+### Download NCBI genomes using a perl script included in this myrast docker.  
+**Input Files:**  
 Id_NCBI file (File with the genome ids from NCBI you wish to upload to RAST)  
 1.NCBI_and_RAST script from GitHub  
 `perl 1.NCBI_and_RAST Id_NCBI  `
@@ -105,7 +106,11 @@ To download genomes without using RAST please comment line 20 adding a character
 Figure 3. Modify line 20 if you are not planning to use RAST, and this is if you only want to download genomes from NCBI.
 
 Finally, run the script:     
-`perl 1.NCBI_and_RAST Id_NCBI`
+`perl 1.NCBI_and_RAST Id_NCBI`  
+
+### Download genomes using [ncbi-genome-download](https://github.com/kblin/ncbi-genome-download) github repo from kblin.   
+`ncbi-genome-download --dry-run bacteria`  
+
 
 ## 2. RAST upload genomes  
 **Input files** 
