@@ -69,7 +69,7 @@ You can change the format table_txt for whatever format you need.
 | table_xls               | Gene data in EXCEL format                                 |   
 
 ###  To delete RAST files `svr_delete_RAST_job`.   
-svr_delete_RAST_job username password jobnumber
+ svr_delete_RAST_job username password jobnumber`  
 
 ## Extra features of docker-myrast.  
 1. Download genomes from NCBI.  
