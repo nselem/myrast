@@ -89,7 +89,7 @@ Prepare the file Id_NCBI. It should be a text file with two columns. The first c
 NOTE: To see the status of the job, type: $svr_status_of_RAST_job user password jobID
 If you want to review other options, could visit http://blog.theseed.org/servers/usage/the-rast-batch-interface.html
 
-![NCBI id list](figure/fig1.png)
+![NCBI id list](figure/Fig1.png)
 
 Figure 1- File with NCBI Id’s, genus and species names.
 
