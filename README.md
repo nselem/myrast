@@ -123,17 +123,18 @@ RAST_id  file with your RAST ids
 `2.Batch_RetrieveFiles.pl RAST_id`
 
 **3.1. Id_RAST file**
-From your jobs overview personal website, copy the job, the id and the  organism name columns in a text tab separated file. See the anexo if you don't know how to create a tab separated file.
+From your jobs overview personal website, copy the job, the id and the  organism name columns in a text tab separated file. First, from the RAST web site save the jobId, the genome Id and the organism name of your interest.  
   
 ![NCBI id list](figure/fig3.png)  
-Figure 5. Get your jobs id from RAST website.  
+Figure 5. Get your job ids, genome Ids and organism names from RAST website.  
   
+ After that use the information to construct a tab separated file.  
 ![NCBI id list](figure/fig4.png)  
 Figure 6. Create a file with your jobs id’s.
-Anexo:
-
-Create a tab separated file
-1.Copy the table in an excel file.
-2.Delete the columns you don’t need.
-3.Copy the columns you need into a decent text editor like, vi, gedit, etc. (remember word is not a text editor).
-4.Save the file.
+  
+Create a tab separated file  
+1.Copy the table in an excel or google sheet file.  
+2.Delete the columns you don’t need.  
+3.Copy the columns you need into a text editor like vi, nano, gedit, etc. (remember word is not a text editor).  
+4.Save the file.  
+  
