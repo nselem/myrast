@@ -10,6 +10,12 @@ Once you have docker installed, pull the myrast dcker distribution.
 `docker run -i -t -v $(pwd):/home nselem/myrast /bin/bash`
 ## Use myRast  
 Now you can use myRast:  
+
+There are several scripts in my rast distribution, here we explain how to upload, download and delete jobs to rast servers.  
+> svr__submit_RAST_job    
+> svr_retrieve_RAST_job  
+> svr_delete_RAST_job   
+
 -To upload fasta/genbank  
 `svr_submit_RAST_job -user <user> -passwd <pass> -fasta <file> -domain Bacteria -bioname "Organism name" -genetic_code 11 -gene_caller rast`  
   
