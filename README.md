@@ -16,10 +16,11 @@ There are several scripts in my rast distribution, here we explain the correspon
 > svr_retrieve_RAST_job  
 > svr_delete_RAST_job   
 
--To upload fasta/genbank we use thse script svr_submit_RAST_job
-`svr_submit_RAST_job -user <user> -passwd <pass> -fasta <file> -domain Bacteria -bioname "Organism name" -genetic_code 11 -gene_caller rast`  
+-To upload fasta/genbank we use thse script svr_submit_RAST_job  
+`svr_submit_RAST_job -user <user> -passwd <pass> -fasta <file> -domain Bacteria -bioname "Organism name" -genetic_code 11 -gene_caller rast`    
 
 This script has several parameters:  
+  
 | Parameter  | Description  |   
 |---|---|    
 |--user username   |  RAST login for the submitting user  |  
