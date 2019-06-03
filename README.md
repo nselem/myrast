@@ -89,11 +89,11 @@ Prepare the file Id_NCBI. It should be a text file with two columns. The first c
 NOTE: To see the status of the job, type: $svr_status_of_RAST_job user password jobID
 If you want to review other options, could visit http://blog.theseed.org/servers/usage/the-rast-batch-interface.html
 
-
+![NCBI id list](figure/fig1.png)
 
 Figure 1- File with NCBI Id’s, genus and species names.
 
-You can look for the NCBI ids from the following links: 
+You can look for the NCBI ids from the following links:   
 [Assembly NCBI](http://www.ncbi.nlm.nih.gov/Traces/wgs/?page=1&term=actinomyces&project=WGS&update_date=any&create_date=any&order=prefix&dir=a&have_scaffolds=on&do_not_have_scaffolds=on&have_annot_contigs=on&have_annot_scaffolds=on)  
 [Genoma NCBI](http://www.ncbi.nlm.nih.gov/genome/browse/)  
 Note. Please check that your organism name is correctly written. And that is only the First letter of the genus must be capital. Names like CORYNEBACTERIUM ACCOLENS ATCC 49725 won't be accepted, you must write  Corynebacterium accolens atcc 49725 instead. You can use in excel or libre office the option Format->Change Capitals (feature not present in google drive).
