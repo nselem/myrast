@@ -7,7 +7,8 @@ Once you have docker installed, pull the myrast dcker distribution.
 `docker pull nselem/myrast`  
 
 ## Open myRast terminal   
-`docker run -i -t -v $(pwd):/home nselem/myrast /bin/bash`
+`docker run -i -t -v $(pwd):/home nselem/myrast /bin/bash`  
+  
 ## Use myRast  
 Now you can use myRast:  
 
@@ -16,7 +17,7 @@ There are several scripts in my rast distribution, here we explain the correspon
 > svr_retrieve_RAST_job  
 > svr_delete_RAST_job   
 
--To upload fasta/genbank we use thse script svr_submit_RAST_job  
+### To upload fasta/genbank we use thse script `svr_submit_RAST_job `    
 `svr_submit_RAST_job -user <user> -passwd <pass> -fasta <file> -domain Bacteria -bioname "Organism name" -genetic_code 11 -gene_caller rast`    
 
 This script has several parameters:  
@@ -38,16 +39,16 @@ This script has several parameters:
   
 Note On -bioname it is important that the first letter is capital and all the others lowercase, as on scientific names.  
   
--To download files:  
-`svr_retrieve_RAST_job <user> <password> <jobId> table_txt > $ID.txt`  
+
+###  To retrieve to retrieve RAST files `svr_retrieve_RAST_job`.   
   
+`svr_retrieve_RAST_job <user> <password> <jobId> table_txt > $ID.txt`  
+
 if you have a list of files, you can process it with bash. For example to download a list of RAST files, store the RAST Id numbers on a file, (Rast_ID on this example) and use a while from bash to retrieve them:  
   
 On this case the variable "line" will contain a RAST Id number, and each amino acid file from a RAST Id will be downloaded and stored on "$line.faa"    
 `cut -f1 Rast_ID | while read line; do  svr_retrieve_RAST_job <user> <password> $line amino_acid > $line.faa ; done`
 
-
-### Rast formats to retrieve files.
 You can change the format table_txt for whatever format you need.  
 
 
@@ -67,6 +68,7 @@ You can change the format table_txt for whatever format you need.
 | table_txt               | Gene data in tab-separated format                         |  
 | table_xls               | Gene data in EXCEL format                                 |   
 
+svr_delete_RAST_job username password jobnumber
 
 ## Extra features of docker-myrast.  
 1. Download genomes from NCBI.  
