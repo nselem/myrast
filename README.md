@@ -71,7 +71,7 @@ You can change the format table_txt for whatever format you need.
 ###  To delete RAST files `svr_delete_RAST_job`.   
  svr_delete_RAST_job username password jobnumber`  
 
-## Extra features of docker-myrast.  
+## Extra features included in myrast docker.  
 1. Download genomes from NCBI.  
 2. Upload genomes to RAST.  
 3. Download genomes to RAST.  
@@ -94,8 +94,8 @@ If you want to review other options, could visit http://blog.theseed.org/servers
 Figure 1- File with NCBI Id’s, genus and species names.
 
 You can look for the NCBI ids from the following links: 
-Assembly NCBI
-Genoma NCBI
+[Assembly NCBI](http://www.ncbi.nlm.nih.gov/Traces/wgs/?page=1&term=actinomyces&project=WGS&update_date=any&create_date=any&order=prefix&dir=a&have_scaffolds=on&do_not_have_scaffolds=on&have_annot_contigs=on&have_annot_scaffolds=on)  
+[Genoma NCBI](http://www.ncbi.nlm.nih.gov/genome/browse/)  
 Note. Please check that your organism name is correctly written. And that is only the First letter of the genus must be capital. Names like CORYNEBACTERIUM ACCOLENS ATCC 49725 won't be accepted, you must write  Corynebacterium accolens atcc 49725 instead. You can use in excel or libre office the option Format->Change Capitals (feature not present in google drive).
 
 To download genomes without using RAST please comment line 20 adding a character # at the beginning of line, Figure 2. Save your changes. 
