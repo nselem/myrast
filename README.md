@@ -40,7 +40,7 @@ This script has several parameters:
 Note On -bioname it is important that the first letter is capital and all the others lowercase, as on scientific names.  
   
 
-###  To retrieve to retrieve RAST files `svr_retrieve_RAST_job`.   
+###  To retrieve RAST files `svr_retrieve_RAST_job`.   
   
 `svr_retrieve_RAST_job <user> <password> <jobId> table_txt > $ID.txt`  
 
@@ -68,6 +68,7 @@ You can change the format table_txt for whatever format you need.
 | table_txt               | Gene data in tab-separated format                         |  
 | table_xls               | Gene data in EXCEL format                                 |   
 
+###  To delete RAST files `svr_delete_RAST_job`.   
 svr_delete_RAST_job username password jobnumber
 
 ## Extra features of docker-myrast.  
