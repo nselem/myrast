@@ -101,7 +101,7 @@ Note. Please check that your organism name is correctly written. And that is onl
 ![NCBI id list](figure/fig2.png)  
 To download genomes without using RAST please comment line 20 adding a character # at the beginning of line, Figure 2. Save your changes.   
   
-![NCBI id list](figure/fig3.png)  
+![NCBI id list](figure/fig5.png)  
 Figure 3. Modify line 20 if you are not planning to use RAST, and this is if you only want to download genomes from NCBI.
 
 Finally, run the script:     
