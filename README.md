@@ -20,17 +20,20 @@ There are several scripts in my rast distribution, here we explain the correspon
 `svr_submit_RAST_job -user <user> -passwd <pass> -fasta <file> -domain Bacteria -bioname "Organism name" -genetic_code 11 -gene_caller rast`  
 
 This script has several parameters:  
-> --user username	RAST login for the submitting user  
-> --passwd password	RAST password for the submitting user  
-> --genbank filename	If submitting a genbank file, the file of input data.  
-> --fasta filename	If submitting a FASTA file of contigs, the file of input data.  
-> --domain Bacteria or	  
-> --domain Archaea	Domain of the submitted genome.  
-> --taxon_id taxonomy-id	The NCBI taxonomy id of the submitted genome  
-> --bioname "genus species str."	Biological name of the submitted genome  
-> --genetic_code ( 11 | 4 )	Genetic code for the submitted genome, either 11 or 4.  
-> --gene_caller	Gene caller to use (FigFam-base RAST gene caller or straight Glimmer-3)  
-> --reannotate_only	Preserve the original gene calls and use RAST  
+|   |   |
+|---|---|
+|--user username   |  RAST login for the submitting user  |
+| --passwd password  | RAST password for the submitting user    |
+| --genbank filename  |   If submitting a genbank file, the file of input data.  |
+|  --fasta filename  |  	If submitting a FASTA file of contigs, the file of input data.  |
+| --domain  |Bacteria or	     |
+|   --domain | Archaea	Domain of the submitted genome.   |
+| --taxon_id taxonomy-id  | The NCBI taxonomy id of the submitted genome    |
+|--bioname "genus species str."   |  Biological name of the submitted genome   |
+|   --genetic_code ( 11 | 4 )	 | Genetic code for the submitted genome, either 11 or 4.    |
+|  --gene_caller | Gene caller to use (FigFam-base RAST gene caller or straight Glimmer-3)    |
+|  --reannotate_only	 |  Preserve the original gene calls and use RAST   |
+
   
 Note On -bioname it is important that the first letter is capital and all the others lowercase, as on scientific names.  
   
