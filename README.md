@@ -38,7 +38,9 @@ This script has several parameters:
 
   
 Note On -bioname it is important that the first letter is capital and all the others lowercase, as on scientific names.  
-  
+ 
+ To upload genomes in batch to RAST you can also use the following bash script. You will need a file tab separated where the first column contains the name of the genome files, and the second column the scientific name of the organism. Name this file IdsFile and place yourself where the genome files and th ids files is located. Finally, please substitute your username and password in the corresponding places and copy and paste this script in the terminal inside the myrast docker.  
+`cat IdsFile | while read line; do id=$(echo $line|cut -f1); name=$(echo $line|cut -f2); echo  svr_submit_RAST_job -user <usr> -passwd <pass> -genbank $id -domain Bacteria -bioname "${name}" -genetic_code 11 -gene_caller rast; svr_submit_RAST_job -user <usr> -passwd <pass> -genbank $id -domain Bacteria -bioname "$name" -genetic_code 11 -gene_caller rast; done   `   
 
 ###  To retrieve RAST files `svr_retrieve_RAST_job`.   
   
