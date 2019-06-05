@@ -114,11 +114,14 @@ Finally, run the script:
 
 ### Download genomes using [ncbi-genome-download](https://github.com/kblin/ncbi-genome-download) github repo from kblin. 
 
-To download some specific bacteria we have used  
-`ncbi-genome-download --genus Clavibacter bacteria --parallel 4 --assembly-level complete --format fasta_ --dry-run >IDS`
-`ncbi-genome-download --genus Clavibacter bacteria --parallel 4 --assembly-level complete --format fasta_ --dry-run >IDS`
+To download some specific bacteria from ncbi we have used  ncbi-genome-download. It has to be installed forllowing its github [tutorial](https://github.com/kblin/ncbi-genome-download)   
+  
+After the installation, to visualize a list of the genomes that will be downloaded use the dry-run modifier. For example the following line would show the Clavibacter bacteria with a complete assembly available at MIBiG in the file IDS.    
+`ncbi-genome-download --genus Clavibacter bacteria --parallel 4 --assembly-level complete --format fasta_ --dry-run >IDS`  
 
-`ncbi-genome-download --dry-run bacteria`  
+To actually download the organisms just remove the dry-run modifier.  
+`ncbi-genome-download --genus Clavibacter bacteria --parallel 4 --assembly-level complete --format fasta_ `  
+
 
 
 ## 2. RAST upload genomes  
