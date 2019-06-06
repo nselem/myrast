@@ -32,7 +32,7 @@ This script has several parameters:
 |--domain | Archaea	Domain of the submitted genome.   |  
 |--taxon_id taxonomy-id  | The NCBI taxonomy id of the submitted genome    |  
 |--bioname "genus species str."   |  Biological name of the submitted genome   |  
-|--genetic_code ( 11 | 4 )	 | Genetic code for the submitted genome, either 11 or 4.    |  
+|--genetic_code ( 11 \| 4 )	 | Genetic code for the submitted genome, either 11 or 4.    |  
 |--gene_caller | Gene caller to use (FigFam-base RAST gene caller or straight Glimmer-3)    |  
 |--reannotate_only	 |  Preserve the original gene calls and use RAST   |  
 
