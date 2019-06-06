@@ -133,14 +133,14 @@ Id_NCBI file (File with the genome ids from NCBI you wish to upload to RAST)
 **Id_NCBI file** 
 Follow the instructions in the page above.
 
-## 3. RAST retrieve genomes   
-**Input Files:**
-RAST_id  file with your RAST ids
-2.Batch_RetrievesFiles.pl script from GitHub
-`2.Batch_RetrieveFiles.pl RAST_id`
-
-**3.1. Id_RAST file**
-From your jobs overview personal website, copy the job, the id and the  organism name columns in a text tab separated file. First, from the RAST web site save the jobId, the genome Id and the organism name of your interest.  
+## 3. RAST retrieve genomes    
+**Input Files:**  
+RAST_id  file with your RAST ids  
+2.Batch_RetrievesFiles.pl script from GitHub  
+`2.Batch_RetrieveFiles.pl RAST_id`  
+  
+**3.1. Id_RAST file**  
+From your jobs overview personal website, copy the job, the id and the  organism name columns in a text tab separated file. First, from the RAST web site save the jobId, the genome Id and the organism name of your interest.   
   
 ![NCBI id list](figure/fig3.png)  
 Figure 5. Get your job ids, genome Ids and organism names from RAST website.  
