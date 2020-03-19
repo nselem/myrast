@@ -85,8 +85,8 @@ You can change the format table_txt for whatever format you need.
 **Input Files:**  
 Id_NCBI file (File with the genome ids from NCBI you wish to upload to RAST)    
 1.NCBI_and_RAST script from GitHub    
-`perl 1.NCBI_and_RAST Id_NCBI  `  
-NOTE: To run the 1.NCBI_and_RAST script, it will be done inside the docker, in the myrast option  
+`perl /opt/myrast/1.NCBI_and_RAST Id_NCBI.pl <yourIdsfile> <yourRASTId> <yourRastPassword> `  
+NOTE:  1.NCBI_and_RAST script, will de run inside the docker.
 
 **1.1 Id_NCBI file**
 Prepare the file Id_NCBI. It should be a text file with two columns. The first column filled with NCBI Ids, the second column should contain the organism's genus with the species name. The two columns must be tab separated. Accepted IDs: You can only use ids from the NCBI databases protein, nucleotide and genome.
