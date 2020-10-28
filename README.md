@@ -128,7 +128,7 @@ To actually download the organisms just remove the dry-run modifier.
 **Input files**   
 Id_NCBI file (File with the genome ids from NCBI you wish to upload to RAST)  
 1.NCBI_and_RAST script from GitHub    
-`1.NCBI_and_RAST Id_NCBI file user pass`      
+`1.NCBI_and_RAST.pl Id_NCBI file user pass`      
 
 **Id_NCBI file** 
 Follow the instructions in the page above.
