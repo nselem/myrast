@@ -22,7 +22,7 @@ foreach my $ID (keys %ORGS){
 	#print ("$id => $ORGS{$id}\n")
 	$OrgName=$ORGS{$ID};
 	my $Flag=DownloadGenome($ID, $OrgName);
-#	UploadGenome($ID, $OrgName,$Flag,$user,$pass);
+	UploadGenome($ID, $OrgName,$Flag,$user,$pass);
 
 }
 #ReadID;
